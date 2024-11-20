@@ -3,19 +3,27 @@ import time
 import psutil
 import pyautogui as pag
 
-
 def custom_functionality(button):
-    print(f"Button {button} pressed")
     if button == 1:
-        pag.press('3')
-        # pag.press('right')
+        # Right button
+        pag.press('4')
     elif button == 3:
-        pag.press('1')
-        # pag.press('left')
-    elif button == 0:
-        pag.press('2')
-    elif button == 2:
+        # Bottom button
         pag.press('Enter')
+    elif button == 0:
+        # Top button
+        pag.press('3')
+    elif button == 2:
+        # Left button
+        pag.press('1')
+    # elif button == 6:
+    #     # R button
+    #     # Implement 
+    #     pag.press('2')
+    # elif button == 5:
+    #     # L button
+    #     # Implement Ctrl + Z
+    #     pag.press('1')        
     elif button == 7:
         pag.press('f11')
 
